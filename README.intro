@@ -1,0 +1,16 @@
+App::PM::Toolbox
+
+A toolbox for Perl Monger administrators.  V0 will allow creation of index.html and caldat files from templates and local configuration file, and loading these to the PM.org site via DAV.  
+
+Planned future enhancements include integration with App::PM::Announce, facebook group event creation, etc.
+
+tools:
+ pm-toolbox config                  #interact with the configuration file - create, view subsets/whole
+ pm-toolbox website build           #build website files
+ pm-toolbox build  website calendar #build website and ical files
+ pm-toolbox upload all              #upload all files (website and calendar ... )
+
+all support --dry-run, --verbose, --quiet, logging to a status file.
+
+eventual: log last action to file, require confirmation to redo (like App::PM::Announce).
+
